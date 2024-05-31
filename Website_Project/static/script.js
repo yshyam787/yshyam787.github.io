@@ -1,17 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-
-        // Here you can add code to send the form data to your backend
-
-        form.reset();
-        alert('Message sent successfully!');
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Thank you for your message!');
+            form.reset();
+        } else {
+            alert('Oops! There was a problem submitting your form');
+        }
+    }).catch(error => {
+        alert('Oops! There was a problem submitting your form');
     });
 });
