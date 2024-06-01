@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shyam's Info</title>
+    <title>Shyam Yadav - Data Science Explorer</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /*Additional CSS styles */
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
+
+        <!--Navigation Buttons-->
+        <nav>
+            <a href="experiences.html" class="nav-button">Experiences</a>
+            <a href="projects.html" class="nav-button">Projects</a>
+            <a href="achievements.html" class="nav-button">Achievements</a>
+            <a href="contact.html" class="nav-button">Contact</a>
+        </nav>
+        
+
         <h1>Welcome</h1>
         <p>Let's know each other, and explore the Data Science together!</p>
+
     </header>
 
-    
-    
     <main>
 
         <!-- Photo Insertion Start-->
-        <img src="shyamyadav.jpeg", alt ="Shyam Yadav" class="profile-photo">
+        <img src="shyamyadav.jpeg" alt="Shyam Yadav" class="profile-photo">
         <!--Photo INsertation ends-->
 
         <!-- Summary Section Start -->
@@ -38,8 +53,8 @@
         </section>
         <!-- Summary Section End -->
 
+        <!-- Blog Section Starts Here -->
         <section class="blog-post">
-            <!--Blog Section Starts Here-->
             <h3>Why Data Science?</h3>
             <p>Data science offers a pathway to impactful work, high demand, and lucrative opportunities. 
                 With its interdisciplinary nature and potential for real-world impact, it is an attractive 
@@ -49,15 +64,14 @@
             <a href="https://datascience.nd.edu/why-data-science/">Read more</a>
         </section>
 
-                <!-- Photo Insertion Start-->
-                <section> 
-                    <img src="sdasdasd.png", alt ="DataScienceCircle" class="DataScienceCircle">
-                </section>
-                <!--Photo INsertation ends-->
+        <!-- Photo Insertion Start-->
+        <section> 
+            <img src="sdasdasd.png" alt="DataScienceCircle" class="DataScienceCircle">
+        </section>
+        <!--Photo INsertation ends-->
 
         <section class="blog-post">
-            <h3>Why Germany need Data Scientists?</h3>
-            <!-- <p>Date: May 31, 2024</p> -->
+            <h3>Why Germany needs Data Scientists?</h3>
             <p>Data scientists play a crucial role in Germany's tech landscape, driving innovation and 
                 competitiveness across industries. With the country's strong focus on technology and 
                 engineering, data scientists are in high demand to harness the power of data for 
@@ -66,33 +80,28 @@
                 reliant on data-driven insights. As Germany continues to embrace digital transformation, 
                 data scientists will remain indispensable for driving growth and shaping the future of 
                 industry and society.</p>
-            <a href="https://www.ue-germany.com/blog/is-studying-data-science-in-germany-a-rewarding-investment"
-            >Read more</a>
+            <a href="https://www.ue-germany.com/blog/is-studying-data-science-in-germany-a-rewarding-investment">Read more</a>
         </section>
-        <!--Blog Section Ends Here.-->
+        <!-- Blog Section Ends Here -->
 
-        <!--YouTube Video Embed Start-->
+        <!-- YouTube Video Embed Start-->
         <section class="video">
             <h2>What really is Data Science?</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xC-c7E5PK0Y?si=kcu3L8uu4rb4m0P9"
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <!--YouTube Video Embed End-->
-
- 
+        <!-- YouTube Video Embed End-->
 
         <h2>Let's Collaborate!</h2>
         <p>I believe in the power of collaboration and am always open to working on group projects or tackling data 
             science-related challenges together. Whether you are looking for a partner on a project, need help solving
             a complex data problem, or just want to discuss ideas, I am here to help.</p>
 
-
         <p>Interested in working together? Please fill out the contact form with your details and message, and I will
             get back to you as soon as possible. Let's create something amazing together!</p>
 
-    </section>
         <form id="contact-form" action="https://formspree.io/f/mqkrveba" method="POST">
 
             <label for="name">Name:</label>
@@ -107,12 +116,15 @@
             <button type="submit">Send</button>
         </form>
 
-    <p>Thank you for visiting, and I look forward to hearing from you!</p>
+        <p>Thank you for visiting, and I look forward to hearing from you!</p>
 
     </main>
+
     <footer>
         <p>&copy; 2024 Shyam Yadav. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>
