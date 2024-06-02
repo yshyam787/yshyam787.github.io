@@ -18,6 +18,10 @@ header {
     padding: 10px 0;
 }
 
+header, main, footer {
+    width: 100%; /*Ensures these elements fo not overflow*/
+}
+
 nav {
     display: flex;
     justify-content: space-between;
