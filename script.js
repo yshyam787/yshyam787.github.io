@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = href;
         });
     });
-});
 
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-    document.querySelector('nav').classList.toggle('show');
+    // Toggle the navigation menu on smaller screens
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('show');
+    });
 });
