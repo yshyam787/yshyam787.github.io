@@ -71,54 +71,11 @@ main {
     border-radius: 50%;
 }
 
-/* ------------- Remaining from this part */
-
-section {
-    margin-bottom: 20px;
-}
-
-.content-section {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.blog-post {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.blog-post h3 {
-    color: #333;
-}
-
-.blog-post p {
-    color: #666;
-}
-
-.blog-post a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-.blog-post a:hover {
-    text-decoration: underline;
-}
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
 #contact-form {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     text-align: left;
-    padding: 10px;
+    /* padding: 10px; */
     width: 50%;
 }
 
@@ -126,38 +83,21 @@ input, textarea {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 3px; 
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px;
     background: black;
     color: #fff;
-    border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 
-button:hover {
-    background: black;
-}
-
-.video {
-    margin-top: 20px;
-    text-align: center;
-}
-
-video iframe {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
 footer {
     text-align: center;
-    padding: 1em 0;
+    padding: 1em;
     background-color: black;
     color: white;
-    position: fixed;
     width: 100%;
-    bottom: 0;
 } 
