@@ -1,81 +1,132 @@
 <div class="project-crc">
-    <h1>Collborative Research Center (CRC) Development</h1>
+    <h1>Collaborative Research Center (CRC) Development</h1>
     <img id="sfb-1528" src="assets/media/sfb_1528.jpg" alt="SFB-1528 Project">
-    <p>I am recently working on the development of CRC with integrated research data management and processing solutions for the SFB-1528 project <a href="https://www.uni-goettingen.de/de/vorschau_4d7abdea6865ad9b00e5ffc2312b6c31/675774.html">(Read more)</a>. Basically, the German researchers located at different regions of the world are doing their research on "Cognition of Interaction". Thus, they oberseve the behaviour of primates and collects the data in the CSV and Excel files. For example, Demographic_Data.csv, Harmone_Information.csv, and so on. However, those data contains lots of errors and abnormalities. Thus, I am making a centralised solution for this project and creating a concrete pipeline. They can simply dump their data on Owncloud and do the analysis on Metabase. All the steps involved in between are handled and automated by me. The process and data science solutions involved in this project are explained here.</p>
+    <p>I am currently working on the development of the CRC with integrated research data management and processing solutions for the SFB-1528 project 
+        <a href="https://www.uni-goettingen.de/de/vorschau_4d7abdea6865ad9b00e5ffc2312b6c31/675774.html">(Read more)</a>. 
+        Essentially, German researchers located in different regions of the world are conducting research on "Cognition of Interaction." 
+        They observe the behavior of primates and collect data in CSV and Excel files, such as <i>Demographic_Data.csv</i> and <i>Hormone_Information.csv</i>. 
+        However, these datasets contain numerous errors and abnormalities. 
+        To address this, I am developing a centralized solution for this project by creating a concrete data pipeline. 
+        Researchers can simply dump their data on OwnCloud and perform analysis on Metabase, while all intermediate steps are handled and automated by me. 
+        The processes and data science solutions involved in this project are explained below.
+    </p>
 
     <ol>
-        <li>Rclone is implemented for the automated ingestion of Data from Owncloud via WebDAV. Data dumpled on Owncloud are automatically synced on the local machine/directory for further processing.</li>
+        <li>Rclone is implemented for the automated ingestion of data from OwnCloud via WebDAV. Data dumped on OwnCloud is automatically synced to the local machine/directory for further processing.</li>
 
-        <li>Databases and tables on the PostgreSQL are created on the basis of names of folder or sub-folders and files respectively.</li>
+        <li>Databases and tables in PostgreSQL are created based on the names of folders, subfolders, and files.</li>
 
-        <li >In the <span style="background-color: lightgrey;">metadajsonta.</span> file, the schema for the database and data types is defined. Pandas is used for creating dataframe based on the JSON file.</li>
+        <li>In the <span style="background-color: lightgrey;">metadata.json</span> file, the schema for the database and data types is defined. Pandas is used to create a dataframe based on the JSON file.</li>
 
-        <li>After pre-processing of the dataframe, it is pushed to database. <span style="background-color: lightgrey;">Alembic</span> is used for the versioning of the schema for the PostgreSQL.</li>
+        <li>After preprocessing the dataframe, it is pushed to the database. <span style="background-color: lightgrey;">Alembic</span> is used for versioning the schema in PostgreSQL.</li>
 
-        <li><span style="background-color: lightgrey;">Cronjob</span> and  <span style="background-color: lightgrey;">Celery</span> is used for the automation of the pipeline.</li>
+        <li><span style="background-color: lightgrey;">Cronjob</span> and <span style="background-color: lightgrey;">Celery</span> are used for the automation of the pipeline.</li>
     </ol>
-
 </div>
+
 
 <div class="project-xwiki">
-    <h1>XWiki Development and Integration  with WordPress</h1>
-    <img id="xwiki-img" src="assets/media/xwiki.png" alt="Xwiki Interface">
-    <p>Considering the flexibility, robust in-built Solr Search capability, and proper UI, I embeded the <a href="https://c110-019.cloud.gwdg.de/bin/view/G%C3%B6ttinger%20Digitale%20Akademie/">XWiki</a> for the centralised solution for the Knowledge Base <a href="https://c110-019.cloud.gwdg.de/bin/view/G%C3%B6ttinger%20Digitale%20Akademie/">(Read more)</a>. All the information regarding the projects of Nidersächsische Digitale Akademie and related informaiton were stored in this XWiki. The whole development of this project is explained here.</p>
+    <h1>XWiki Development and Integration with WordPress</h1>
+    <img id="xwiki-img" src="assets/media/xwiki.png" alt="XWiki Interface">
+    <p>Considering its flexibility, robust built-in Solr search capability, and user-friendly UI, 
+        I embedded <a href="https://c110-019.cloud.gwdg.de/bin/view/G%C3%B6ttinger%20Digitale%20Akademie/">XWiki</a> 
+        as a centralized solution for the Knowledge Base 
+        <a href="https://c110-019.cloud.gwdg.de/bin/view/G%C3%B6ttinger%20Digitale%20Akademie/">(Read more)</a>. 
+        All information regarding the projects of the Niedersächsische Digitale Akademie and related details 
+        was stored in this XWiki. The entire development of this project is explained below.
+    </p>
 
     <ol>
-        <li>XWiki and its Standard Flavor was installed through Docker Compose on the Ubuntu Virtual Machine of Academic Cloud of GWDG.</li>
+        <li>XWiki and its Standard Flavor were installed through Docker Compose on the Ubuntu Virtual Machine of the Academic Cloud at GWDG.</li>
 
-        <li>XWiki was deployed on Apache Tomcat and the SSL certificates were generated through Let's Encrypt using Caddy.</li>
+        <li>XWiki was deployed on Apache Tomcat, and SSL certificates were generated through Let's Encrypt using Caddy.</li>
 
-        <li>After creating the pages and sub-pages, the spaces were integrated to the WordPress using XWiki REST API.</li>
+        <li>After creating the pages and sub-pages, the spaces were integrated into WordPress using the XWiki REST API.</li>
 
-        <li>Customized Plugins for the WordPress was created using PHP. This plugin was used to fetch the contents of XWiki Spaces and integrate it to the WordPress.</li>
+        <li>Customized plugins for WordPress were created using PHP. These plugins fetched the contents of XWiki Spaces and integrated them into WordPress.</li>
 
-        <li>Pandoc was used for data-migration from the Encyclopedia of WordPress to Xwiki. A complete data-migration and integration pipeline was built.</li>
+        <li>Pandoc was used for data migration from the WordPress Encyclopedia to XWiki. A complete data migration and integration pipeline was built.</li>
     </ol>
-
 </div>
+
 
 <div class="project-hekksagon">
     <h1>HeKKSaGOn-GPDS Summer School Projects on Data Science</h1>
     <img id="hekksagon-img" src="assets/media/HeKKSaGOnCertificate.jpeg" alt="HeKKSaGOn-GPDS Certificate">
-    <p>In the summer 2024, I was selected for the <a href="https://sites.google.com/view/datasciencesummerschool2024?usp=sharing">International Summer School on Data Science 2024</a> program organised by <a href="https://www.hekksagon.net/232.php">HeKKSaGOn network</a>. It was a two-week extensive summer school program which covered wide range of topics in advanced data science. Also, I worked on numerous worshops and was able to win 3 Kaggle Competitions. The workshops accomplished are listed below.</p>
+    <p>In the summer of 2024, I was selected for the 
+        <a href="https://sites.google.com/view/datasciencesummerschool2024?usp=sharing">International Summer School on Data Science 2024</a> 
+        program organized by the <a href="https://www.hekksagon.net/232.php">HeKKSaGOn network</a>. 
+        It was a two-week intensive summer school program covering a wide range of topics in advanced data science. 
+        Additionally, I worked on numerous workshops and successfully won three Kaggle competitions. 
+        The workshops I participated in are listed below.
+    </p>
+
     <ol>
-        <li>I participated in the 'Lemonade Stand Profit Prediction' Kaggle Competitions. Based on the 10 parameters given, I and my team predicted the profit. Different dimensionality reduction techniques and regression algorithms were used. <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Lemonade_Stand_income_prediction_using_data_simplification.ipynb">Read more</a></li>
+        <li>I participated in the 'Lemonade Stand Profit Prediction' Kaggle competition. 
+            Based on the ten given parameters, my team and I predicted the profit. 
+            Various dimensionality reduction techniques and regression algorithms were used. 
+            <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Lemonade_Stand_income_prediction_using_data_simplification.ipynb">Read more</a>
+        </li>
 
-        <li>Similary, the next workshop was on 'Stock Price Forecasting' competition where we needed to forecast the stock price of half of 2020. Time Series Analsysis Method including ARIMA, SARIMA, and LSTM models were implemented to forecast furture trends. <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Stock_price_prediction_of_second_half_of_2020%20_Time_Series_Analysis.ipynb">Read more</a></li>
+        <li>Similarly, the next workshop was on the 'Stock Price Forecasting' competition, where we needed to forecast the stock price for the second half of 2020. 
+            Time series analysis methods, including ARIMA, SARIMA, and LSTM models, were implemented to predict future trends. 
+            <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Stock_price_prediction_of_second_half_of_2020%20_Time_Series_Analysis.ipynb">Read more</a>
+        </li>
 
-        <li>The third workshop was on 'Golfer Type Clustering' competition where clustering algorithms, including K-means and DBSCAN were implemented. <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Golfer_type_clustering.ipynb">Read more</a></li>
+        <li>The third workshop was on the 'Golfer Type Clustering' competition, where clustering algorithms, including K-means and DBSCAN, were implemented. 
+            <a href="https://github.com/yshyam787/HeKKSaGOn-GPDS_Projects/blob/main/Kaggle_Competitions/Golfer_type_clustering.ipynb">Read more</a>
+        </li>
     </ol>
 </div>
+
 
 <div class="project-modeling">
     <h1>World Trade Database Deduping</h1>
 
     <img id="pandas-img" src="assets/media/pandas.png" alt="Pandas Dedupe">
-    <p>During my internship at <a href="https://makersite.io/">Makersite GmbH</a>, I worked for the World Trade Database project in which, database deduping using <code>pandas_dedupe</code> Machine Learning model was implemented. <a href="https://github.com/yshyam787/World_Trade_Database_Deduping/blob/master/Code/main_script.py">Read more...</a></p>
+    <p>During my internship at <a href="https://makersite.io/">Makersite GmbH</a>, I worked on the World Trade Database project, 
+        where database deduping was implemented using the <code>pandas_dedupe</code> machine learning model. 
+        <a href="https://github.com/yshyam787/World_Trade_Database_Deduping/blob/master/Code/main_script.py">Read more...</a>
+    </p>
 
     <ol>
-        <li>The database library were extremely big with multiple folders and sub-folders. All those directories were traversed by using <code>os</code> library and the paths of the files and folders were navigated and stored.</li>
+        <li>The database library was extremely large, containing multiple folders and subfolders. 
+            All these directories were traversed using the <code>os</code> library, and the paths of the files and folders were navigated and stored.
+        </li>
 
-        <li>Before modeling of the data, they were pre-processed and cleaned by <code>pandas_dedupe</code>. The model were trained at first and the trained model was implemented throught the database. It took more than 10 hours to dedupe all the database. </li>
+        <li>Before modeling the data, it was preprocessed and cleaned using <code>pandas_dedupe</code>. 
+            The model was first trained and then applied throughout the database. 
+            It took more than 10 hours to dedupe the entire database.
+        </li>
 
-        <li>Before finalising the final perfect model, the data were also trained on other numberous libraries using Machine Learning tools like TensorFlow and PyTorch.</li>
+        <li>Before finalizing the perfect model, the data was also trained on various other libraries 
+            using machine learning tools such as TensorFlow and PyTorch.
+        </li>
     </ol>
 </div>
+
 
 <div class="project-credit">
     <h1>Credit Card Fraud Detection</h1>
 
     <img id="fraud-detection" src="assets/media/fraud_detection.png" alt="Credit Card Fraud Detection">
 
-    <p>This is my personal project. I was very interested to learn the mechanism of fraud detection and clustering algorithms. Therefore, I worked on the credit transactions made by European cardholders in September 2013. The dataset covered the period of 48 hours with a total of 284,807 transactions. <a href="https://github.com/yshyam787/Credit_Card_Fraud_Detection/blob/main/credit_card_fraud_detection.ipynb">Read more...</a></p>
+    <p>This is my personal project. I was very interested in learning the mechanism of fraud detection and clustering algorithms. 
+        Therefore, I worked on credit transactions made by European cardholders in September 2013. 
+        The dataset covered a period of 48 hours with a total of 284,807 transactions. 
+        <a href="https://github.com/yshyam787/Credit_Card_Fraud_Detection/blob/main/credit_card_fraud_detection.ipynb">Read more...</a>
+    </p>
 
     <ol>
-        <li>The data was cleaned and preprocessed using <code>Pandas</code> and <code>NumPy</code>. Preprocessing involved dropping the null values and duplicates, transformation, sorting, and feature extraction. </li>
+        <li>The data was cleaned and preprocessed using <code>Pandas</code> and <code>NumPy</code>. 
+            Preprocessing involved dropping null values and duplicates, transformation, sorting, and feature extraction.
+        </li>
 
-        <li>Preprocessed data were visualised using matplotlib and the general trend of the highest and lowest trasactions time of a day was analysed.</li>
+        <li>Preprocessed data was visualized using Matplotlib, and the general trend of the highest and lowest transaction times of the day was analyzed.
+        </li>
 
-        <li>Monitoring rules like threshold amount rule and threshold frequency within an hours were specified. The fraudulent customers were flagged and detected based on the combined analysis of the amount of transactions and frequency of transactions made within an hour.</li>
+        <li>Monitoring rules, such as the threshold amount rule and threshold frequency within an hour, were specified. 
+            Fraudulent customers were flagged and detected based on a combined analysis of transaction amounts and transaction frequencies within an hour.
+        </li>
     </ol>
 </div>
