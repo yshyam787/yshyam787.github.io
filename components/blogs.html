@@ -6,24 +6,24 @@
     <div class="xwikiBlog-contents">
         <img id="xwikiWP" src="assets/media/xwikiWP.webp" alt="Xwiki and WP integration">
 
-        <p>Since XWiki is an open-source platform and offfers powerful and flexible solutions for knowledge base management, I have recently implemented it in one of my project. Information on knowledge base were scattered throuhout the website and there were not a centralized solution for this scenario. Thus, XWiki seem to be an ideal solution. However, I also faced lots of problem during the whole process. Thus, I will guide you throught all the process and I hope you can solve thosse situations incase you encountered.</p>
+        <p>Since XWiki is an open-source platform and offfers powerful and flexible solutions for knowledge base management, I have recently implemented it in one of my project. Information on knowledge base were scattered throuhout the website and there were not a centralized solution for this scenario. Thus, XWiki seem to be an ideal solution. However, I also faced lots of problem during the whole process. Thus, I will guide you throught all the process and I hope you can solve those situations incase you encountered.</p>
 
         <h4>1. Installing XWiki</h4>
-        <p>I installed the XWiki using Docker on the Ubuntu Virtual Machine. The Docker Compose file was used to simplify the deployment. All the steps involved in this process, along with the contents of the docker compose file, are given <a href="https://github.com/xwiki/xwiki-docker/tree/master">here</a>. Please read it carefully and go through all the process. My XWiki instance was set up with Tomcat and PostgreSQL. However, you can use according to your need.</p>
+        <p>I installed the XWiki using Docker on the Ubuntu Virtual Machine. The Docker Compose file was used to simplify the deployment. All the steps involved in this process, along with the contents of the docker compose file, are given <a href="https://github.com/xwiki/xwiki-docker/tree/master">here</a>. Please read it carefully and go through all the process. My XWiki instance was set up with Tomcat and PostgreSQL. However, you can use the services according to your need.</p>
 
-        <h4>2. SSL Certifcate Installation</h4>
-        <p>This an optional step. Since my VM did not had SSL certificates, my XWiki intance was flagged with <code>Not Secure</code> warning. Therefore, I installed the SSL certificates on Docker from Let's Encrypt using Caddy. The Domain derived from the IP of VM was used for it.</p>
+        <h4>2. SSL Certifcate Generation</h4>
+        <p>This an optional step. Since my VM had no SSL certificates, my XWiki instance was flagged with <code>Not Secure</code> warning. Therefore, I installed the SSL certificates on Docker from Let's Encrypt using Caddy. The Domain name derived from the IP of VM was used for it.</p>
 
         <h4>3. XWiki Intance and REST API</h4>
-        <p>After running Xwiki and Postrges container and installing the Standard Flavour of Xwiki, numerous knowledge base with sub-brances were created. <span style="color: red;">&#9888</span> However, I struggled a lot with XWiki API detection. Make sure that you are in the <code>xwiki</code> name space. Otherwise, we need to use the URL <code>localhost:&lt;your_port_number&gt;"/rest/</code>. Lots of people gets confused with <code>localhost:&lt;your_port_number_&gt;/xwiki/rest/</code>. The documentation of XWiki is not clear enough for this case.</p>
+        <p>After running Xwiki and PostrgeSQL container and installing the Standard Flavour of Xwiki, numerous knowledge base with sub-brances were created. <span style="color: red;">&#9888</span> However, I struggled a lot with XWiki API detection. Make sure that you are in the <code>xwiki</code> name space. Otherwise, we need to use the URL <code>localhost:&lt;your_port_number&gt;"/rest/</code>. Lots of people gets confused with <code>localhost:&lt;your_port_number_&gt;/xwiki/rest/</code>. The documentation of XWiki is not clear enough for this case.</p>
 
         <h4>4. Custom WordPress Plugin Development for XWiki Integration</h4>
         <p>No suitable and free plugins were available to integrate XWiki API with WordPress. Thus, I created my own PHP plugins <code>function.php</code> and I was able to integrate it to the WordPress. Before integration, I initially installed the Common Markup 1.2 on XWiki for rendering it on HTML. Thus, the content were easily fetched by WordPress successfully.</p>
 
         <h4>5. Parsing Fetched Content</h4>
-        <p>Finally, the fetched content was parsedown by donwloading <code>Parsedown.php</code> and added it to the <code>function.php</code>. After parsing, displayed contents were also containing the strings of php code. Those strings were striped creating a funciton in the php plugins. Finally, the displayed content resembled exactly same compared to the one written in XWiki.
+        <p>Finally, the fetched content was parsedown by donwloading <code>Parsedown.php</code> and added it to the <code>function.php</code> <a href="https://github.com/erusev/parsedown/blob/master/Parsedown.php">(Read more)</a>. After parsing, displayed contents were also containing the strings of php code. Those strings were striped creating a funciton in the php plugins. Finally, the displayed content were similar to the one written in XWiki.
 
-        <p>Note: If you want to transfer the data from any websites, format, or WordPress, <code>Pandoc</code> seems to be the best solution for it. Also, if you need the code or support for any process involved, you can contact me or submit the contact form in the <code>CONTACTS</code> menu of this website. I will reach to you as soon as possible.</p>
+        <p>Note: If you want to transfer the data from any websites, format, or WordPress to XWiki, <code>Pandoc</code> seems to be the best solution for it. Also, if you need the actual code, any support, or further details for the steps explained above, you can contact me or submit the contact form in the <code>CONTACTS</code> menu of this website. I will reach to you as soon as possible.</p>
 
     </div>
 </div>
