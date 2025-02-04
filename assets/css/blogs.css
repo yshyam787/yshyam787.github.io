@@ -1,0 +1,26 @@
+main {
+    margin: 30px
+}
+
+.xwikiBlog {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.xwikiBlog-contents {
+    text-align: justify;
+    overflow: hidden; /* clears the float */    
+}
+
+#xwikiWP {
+    max-width: 40%;
+    float: left; /* to wrap the text and images */
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+code {
+    background-color: lightgrey;
+}

@@ -1,95 +1,39 @@
+<!--The website can be made a bit more dynamic by adding the individual html.-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shyam Yadav - Data Science Explorer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <!-- Navigation Buttons -->
-        <nav>
-            <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
-            <div class="nav-links">
-                <a href="index.html" class="nav-button">Home</a>
-                <a href="experiences.html" class="nav-button">Experiences</a>
-                <a href="projects.html" class="nav-button">Projects</a>
-                <a href="achievements.html" class="nav-button">Achievements</a>
-                <a href="resources.html" class="nav-button">Resources</a>
-                <a href="contact.html" class="nav-button">Contact</a>
-            </div>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Shyam Yadav | Portfolio</title>
+
+        <script src="https://kit.fontawesome.com/7837028c44.js" crossorigin="anonymous"></script>
+
+        <!-- Prism.js CSS for syntax highligting. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+
+        <!-- Prism.js Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
+
+
+
+        <link rel="stylesheet" href="assets/css/global.css"> <!--CSS for styling-->
+        <script defer src="assets/script.js"></script> <!--for dynamicity. defer
+        delays the page loading which ensures that whole HTML page is parsed well.-->
+
+    </head>
+
+    <body>
+
+        <!-- Header will be inserted here.  -->
+        <div id="header"></div>
+
+        <!-- Main content of the website will be displayed here.  -->
+        <main id="content"></main>
         
-
-        <h1>Welcome</h1>
-        <p>Let's know each other, and explore Data Science together!</p>
-    </header>
-
-    <main>
-        <img src="shyamyadav.jpeg" alt="Shyam Yadav" class="profile-photo">
-
-        <section class="summary">
-            <h2>Hey Data Nerds!!</h2>
-            <p>I am Shyam Yadav, and I am thrilled to have you here. This website is a space where you can learn more about me, my interests, and my work. Feel free to explore, read some useful information and blogs on Data Science, and check out the videos. I am passionate about data science and always looking for exciting projects to work on.</p>
-
-            <h3>Who Am I?</h3>
-            <p>I am currently doing my master's in Applied Data Science at the University of Göttingen. Besides my deep interest in Data Science, I am enthusiastic about technology, AI, and Engineering.</p>
-
-            <h3>What Can You Find Here?</h3>
-            <p>Blogs, Posts, Videos, and General Information about myself.</p>
-        </section>
-
-        <section class="blog-post">
-            <h3>Why Data Science?</h3>
-            <p>Data science offers a pathway to impactful work, high demand, and lucrative opportunities. With its interdisciplinary nature and potential for real-world impact, it is an attractive field for those seeking dynamic challenges and meaningful contributions. From personalized products to entrepreneurial ventures, data science empowers professionals to innovate and thrive in a data-driven world.</p>
-            <a href="https://datascience.nd.edu/why-data-science/">Read more</a>
-        </section>
-
-        <section> 
-            <img src="sdasdasd.png" alt="DataScienceCircle" class="DataScienceCircle">
-        </section>
-
-        <section class="blog-post">
-            <h3>Why Germany needs Data Scientists?</h3>
-            <p>Data scientists play a crucial role in Germany's tech landscape, driving innovation and competitiveness across industries. With the country's strong focus on technology and engineering, data scientists are in high demand to harness the power of data for decision-making and product development. Their skills are essential for optimizing processes, improving efficiency, and staying ahead in a global economy increasingly reliant on data-driven insights. As Germany continues to embrace digital transformation, data scientists will remain indispensable for driving growth and shaping the future of industry and society.</p>
-            <a href="https://www.ue-germany.com/blog/is-studying-data-science-in-germany-a-rewarding-investment">Read more</a>
-        </section>
-
-        <section class="video">
-            <h2>What really is Data Science?</h2>
-            <iframe width="480px" height="300px" src="https://www.youtube.com/embed/xC-c7E5PK0Y?si=kcu3L8uu4rb4m0P9"
-            title="Dats Science explorer" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-
-        <h2>Let's Collaborate!</h2>
-        <p>I believe in the power of collaboration and am always open to working on group projects or tackling data science-related challenges together. Whether you are looking for a partner on a project, need help solving a complex data problem, or just want to discuss ideas, I am here to help.</p>
-
-        <p>Interested in working together? Please fill out the contact form with your details and message, and I will get back to you as soon as possible. Let's create something amazing together!</p>
-
-        <form id="contact-form" action="https://formspree.io/f/mqkrveba" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-            <p>Thank you for visiting, and I look forward to hearing from you!</p>
-        </form>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Shyam Yadav. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
+        <!-- Footer will be here. -->
+        <div id="footer"></div>
+    </body>
 </html>

@@ -1,0 +1,52 @@
+@media screen and (max-width:600px) {
+    #nav-list{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }  
+}
+
+
+body, html { /* extremely important to remove the horizontal line and keep website in place*/
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.nav-menu {
+    width: 100%; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    list-style-type:none;
+    overflow: hidden; /*To inline the menu on the same page.*/
+    background-color: black;
+    margin: 0; /*to remove the margins*/
+
+}
+
+#nav-list {
+    float: left;
+    margin-right: 8%; /* to space the menus */  
+    font-size: 20px;
+    text-align: center;
+}
+
+#nav-list a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none; /*to remove the underline */
+    color: white;
+}
+
+#nav-list:hover {
+    background-color: slategray;
+    border-radius: 10px;
+}
+
+.footer-style {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:10px;
+}

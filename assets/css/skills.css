@@ -1,0 +1,82 @@
+@media  screen and (max-width:600px) {
+    .skills {
+        flex-direction: column;
+    }
+    
+}
+
+main {
+    margin: 30px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap; /*to use the available space dynamicall and wrap it.*/
+    margin-left: auto; /* to make the items in the center */
+    margin-right: auto;
+}
+
+h2 {
+text-align: center;
+}
+
+.programming {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;   
+    border-radius: 5px;
+}
+
+.dsTools {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.dataProcessing {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.miscellaneous {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.maths {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.languages {
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
