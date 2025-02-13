@@ -7,6 +7,7 @@ main {
 /* Numbering for H1 */
 h1 {
     counter-reset: h2-counter; /* Reset h2 counter when a new h1 appears */
+    text-align: left;
 }
 
 h1::before {
